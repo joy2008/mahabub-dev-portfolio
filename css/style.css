@@ -1,0 +1,122 @@
+/* Required for full background image */
+/* Navbar css start */
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+
+}
+
+.top-nav-collapse {
+    background-color: #563e91 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #563e91 !important;
+    }
+
+
+}
+
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(51, 23, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(51, 23, 198, 0.69) 100%);
+    background: linear-gradient( 45deg, rgba(213, 15, 61, 0.6), rgba(51, 23, 198, 0.69) 100%);
+}
+.main-logo{
+    opacity: .3;
+}
+/* Navbar css End*/
+
+/* Css effect start*/
+.effect {
+    position: relative;
+    display: block;
+    padding-bottom: 2px;
+
+}
+
+@media (max-width: 1199.98px) {
+    .effect {
+        display: inline-block;
+    }
+}
+
+
+.effect:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #A44BF3;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s; }
+
+.effect:hover:before {
+    visibility: visible;
+    transform: scaleX(1); }
+
+
+/* Css effect end*/
+
+
+.map-container-section {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-section iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/* ------ scorll back to top button css */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+/* ------ scorll back to top button css */
